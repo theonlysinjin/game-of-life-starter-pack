@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  gameoflife:
+    container_name: gameoflife
+    build:
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../:/app

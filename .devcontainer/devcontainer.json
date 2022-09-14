@@ -1,0 +1,22 @@
+{
+  "name": "game of life",
+  "dockerComposeFile": [
+    // "../docker-compose.yaml"
+    "docker-compose.yaml"
+  ],
+  "service": "gameoflife",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/app",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+
+      "extensions": ["ms-python.python"]
+    }
+  }
+
+  // "postCreateCommand": "pip3 install -r requirements.txt"
+}
